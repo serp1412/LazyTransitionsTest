@@ -1,0 +1,6 @@
+framework module Pods_LazyTransitionsTest {
+  umbrella header "Pods-LazyTransitionsTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

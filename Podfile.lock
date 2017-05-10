@@ -1,0 +1,12 @@
+PODS:
+  - LazyTransitions (0.1.0)
+
+DEPENDENCIES:
+  - LazyTransitions (= 0.1.0)
+
+SPEC CHECKSUMS:
+  LazyTransitions: cbdc0bd4143f238c0314f73b41db438a786ec527
+
+PODFILE CHECKSUM: 60a388a6f33a2740c747811d8d257d6ae3441a77
+
+COCOAPODS: 1.2.1
