@@ -16,7 +16,7 @@ final class BottomUpTransition: NSObject {
     }
 
     // MARK: Begin original code
-    
+
     let isReversed: Bool
     let animationDuration: TimeInterval
 
@@ -53,7 +53,7 @@ final class BottomUpTransition: NSObject {
         UIView.animate(withDuration: animationDuration, delay: 0.0, options: .curveEaseInOut, animations: {
             animatingViewController.view.transform = self.isReversed ? scaleOutTransform : identityTransform
         }) { _ in
-            transitionContext.completeTransition(true)
+            transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
             if self.isReversed {
                 animatingViewController.view.transform = identityTransform
             }
